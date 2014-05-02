@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root minHeight="600.0" minWidth="800.0" prefHeight="795.0" prefWidth="1078.0" style="-fx-background-color: rgba(0, 0, 0, 0);" type="BorderPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<center><SplitPane fx:id="mainSplit" dividerPositions="0.29797979797979796" focusTraversable="true" layoutY="35.0" style="-fx-background-color: rgba(0, 0, 0, 0);" BorderPane.alignment="CENTER">
+  <items>
+    <AnchorPane fx:id="leftAnchorPane" minHeight="-Infinity" minWidth="640.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: rgba(0, 0, 0, 0);">
+<children><SplitPane fx:id="leftSplit" dividerPositions="0.5" focusTraversable="true" orientation="VERTICAL" prefHeight="593.0" prefWidth="640.0" style="-fx-background-color: rgba(0, 0, 0, 0);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+  <items>
+    <AnchorPane fx:id="glArea" minHeight="480.0" minWidth="640.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: rgba(0, 0, 0, 0);">
+<children><ImageView fx:id="glTarget" fitHeight="480.0" fitWidth="638.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+<viewport>
+<Rectangle2D />
+</viewport></ImageView>
+</children></AnchorPane>
+    <AnchorPane minHeight="200.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+<children><TabPane layoutX="14.0" layoutY="14.0" prefHeight="245.0" prefWidth="638.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+  <tabs>
+    <Tab text="Untitled Tab 1">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="243.0" prefWidth="597.0" />
+      </content>
+    </Tab>
+    <Tab text="Untitled Tab 2">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
+</children></AnchorPane>
+  </items>
+</SplitPane>
+</children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="160.0" prefHeight="671.0" prefWidth="660.0">
+<children><BorderPane prefHeight="733.0" prefWidth="430.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+<center><TreeView BorderPane.alignment="CENTER" />
+</center>
+<top><Label text="Layers" BorderPane.alignment="CENTER" />
+</top></BorderPane>
+</children></AnchorPane>
+  </items>
+</SplitPane>
+</center>
+<top><VBox prefHeight="40.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+<children><MenuBar BorderPane.alignment="CENTER">
+  <menus>
+    <Menu mnemonicParsing="false" text="File">
+      <items>
+        <MenuItem mnemonicParsing="false" text="Close" />
+      </items>
+    </Menu>
+    <Menu mnemonicParsing="false" text="Edit">
+      <items>
+        <MenuItem mnemonicParsing="false" text="Delete" />
+      </items>
+    </Menu>
+    <Menu mnemonicParsing="false" text="Help">
+      <items>
+        <MenuItem mnemonicParsing="false" text="About" />
+      </items>
+    </Menu>
+  </menus>
+</MenuBar><ToolBar prefWidth="200.0" BorderPane.alignment="CENTER">
+  <items>
+    <Button mnemonicParsing="false" text="Button" /><Button mnemonicParsing="false" text="Button" /><Button mnemonicParsing="false" text="Button" />
+  </items>
+</ToolBar>
+</children></VBox>
+</top></fx:root>
