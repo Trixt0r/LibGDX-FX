@@ -50,6 +50,7 @@ public class LwjglToJavaFX {
 
 	LwjglToJavaFX(final ImageView target) {
 		targetView = target;
+		target.setScaleY(-1);
 		this.pendingRunnables = new ConcurrentLinkedQueue<Runnable>();
 
 		if ( (Pbuffer.getCapabilities() & Pbuffer.PBUFFER_SUPPORTED) == 0 )
